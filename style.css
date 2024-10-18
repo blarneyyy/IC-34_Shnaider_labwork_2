@@ -1,8 +1,12 @@
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+    background-color: #1a1a1a; 
+    color: white; 
+    font-family: "Trebuchet MS", sans-serif; 
 }
 
 body {
@@ -23,7 +27,7 @@ header, footer {
 }
 
 header {
-    background-color: #ffc0cb;
+    background-color: #333; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -44,18 +48,93 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #111;
+    background-color: #111; 
 }
 
 footer {
-    background-color: #ffc0cb;
+    background-color: #333; 
     padding: 10px;
     text-align: center;
     width: 100%;
 }
 
+footer a {
+    color: white; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
 .same-size-img {
     max-width: 150px;
     height: auto;
+}
+
+table {
+    background-color: #333; 
+    border-color: white; 
+}
+
+th, td {
+    color: white; 
+}
+
+form {
+    background-color: #2e2e2e; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ddd; 
+}
+
+input[type="date"],
+select,
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; 
+    color: white; 
+    font-size: 16px;
+}
+
+input[type="date"]:focus,
+select:focus,
+textarea:focus,
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f0a500; 
+}
+
+button {
+    background-color: #f0a500; 
+    color: #1a1a1a; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c88700; 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f0a500; 
 }
 
